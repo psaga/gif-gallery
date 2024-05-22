@@ -1,0 +1,22 @@
+$item-width: 200px;
+$item-height: 200px;
+$gap: 10px;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($item-width, 1fr));
+  grid-gap: $gap;
+  .gif {
+    width: $item-width;
+    height: $item-height;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
